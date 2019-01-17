@@ -1,11 +1,11 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-
+import logo from '../images/seattle-angel-logo.png'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: `rebeccapurple`,
+      background: `transparent`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -25,7 +25,25 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+         
         </Link>
+
+        <div class="header">
+  <a href ="/" class="logo"><img src = {logo} alt = ""/></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+    <li><Link to="/">Home</Link></li>
+    <li><Link to ="about">About</Link></li>
+    <li><Link to ="resources">Resources</Link></li>
+    <li><Link to ="team">Leadership</Link></li>
+    </ul>
+  </div>
+        
+
+
+
+
       </h1>
     </div>
   </div>
