@@ -716,6 +716,8 @@ pre tt:after {
   display: block;
   padding: 25px 25px;
   text-decoration: none;
+  
+
 }
 
 .header li a:hover,
@@ -784,7 +786,7 @@ pre tt:after {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 500px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -809,14 +811,17 @@ pre tt:after {
 @media (min-width: 48em) {
   .header li {
     float: left;
+    
   }
   .header li a {
     padding: 20px 30px;
+    
   }
   .header .menu {
     clear: none;
     float: right;
     max-height: none;
+    
   }
   .header .menu-icon {
     display: none;
